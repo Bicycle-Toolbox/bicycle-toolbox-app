@@ -1,0 +1,25 @@
+// MANIFEST
+
+ // CSS SETUP
+@import 'partials/_setup';
+
+// ASSETS 
+@import 'partials/_assets';
+
+// GLOBAL STYLES
+@import 'partials/_globals';
+
+// PULSE ANIMATION
+@import 'partials/_pulseAnimation';
+
+// HOME VIEW
+@import 'partials/_homeView';
+
+//MAINTENANCE VIEW
+@import 'partials/_maintenanceView';
+
+//CLEANING VIEW
+@import 'partials/_cleaningView';
+
+// TOOLBOX VIEW
+@import 'partials/_toolboxView';
