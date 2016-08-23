@@ -1,0 +1,140 @@
+
+// TOOLBOX VIEW -----------------------
+
+.toolbox {
+	background-color: $toolbox-background;
+}
+
+.image-container .bike-toolbox {
+	height: 80%;
+	cursor: pointer;
+
+	@media all and (max-width: 750px) {
+		height: 50%;
+	} 
+
+	@media all and (max-width: 480px) {
+		height: 40%;
+	}
+
+}
+
+.toolbox .image-container {
+	position: relative;
+}
+
+.tool-container {
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	height: 85%;
+	width: 47%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	display: none;
+	background-color: $maintenance-background;
+	margin-top: 3%;
+	border-radius: 20px;
+
+	@media all and (max-width: 940px) {
+		width:75%;
+	}
+
+	@media all and (max-width: 480px) {
+		padding-top: 10px;
+	}
+	@media all and (max-width: 470px) {
+		padding-top: 10px;
+		height: 80%;
+		width: 100%;
+	}
+
+}
+
+.tool-icon {
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	img {
+		height: 150px;
+
+		@media all and (max-width: 940px) {
+			height: 150px;
+			// padding-top: 30px;
+		}
+		@media all and (max-width: 768px) {
+			height: 120px;
+		}
+		@media all and (max-width: 480px) {
+			height: 80px;
+		}
+	}
+	@media all and (max-width: 470px) {
+		height: 80px;
+		display: flex;
+		flex-wrap:wrap;
+		overflow: hidden;
+	}
+}
+
+.description-tool {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+}
+
+.description-tool h3 {
+	font-family: $main-font;
+	font-size: 50px;
+	color: $main-color;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 3% 0;
+
+	@media all and (max-width: 480px) {
+		font-size: 30px;
+	}
+}
+
+.description-tool p {
+	font-family: $main-font;
+	color: $main-color;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 175%;
+	padding: 0 10%;
+
+	@media all and (max-width: 480px) {
+		font-size: 16px;
+	}
+}
+
+.selected-tool-image {
+	width: 40%;
+}
+
+.selected-tool-image {
+	@media all and (max-width: 940px) {
+		display:none;
+	}
+}
+
+.selected-tool-description {
+	width: 60%;
+}
+
+.description-tool .selected-tool-image img {
+	height: 300px;
+}
+

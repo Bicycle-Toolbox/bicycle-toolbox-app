@@ -1,0 +1,242 @@
+// GLOBALS -----------------------
+
+
+// VISIBILITY CLASSES
+.show {
+	opacity: 1;
+	visibility: visible;
+	height: 100vh;
+	width: 100vw;
+}
+
+.hidden {
+	// opacity: 0;
+	// visibility: hidden;
+	display:none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+// WRAPPERS
+
+.page-wrapper {
+	height: 100vh;
+	width: 100vw;
+}
+
+.wrapper {
+	width: 85%;
+	height: 85%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+
+
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+
+}
+
+.wrapper2 {
+	width: 85%;
+	height: 100vh;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+	position: relative;
+
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+// HEADERS
+
+h1 {
+	font-family: $main-font;
+	font-size: 100px;
+	color: $main-color;
+	margin-bottom: 0;
+	@media all and (max-width: 480px) {
+		font-size: 75px;
+	}
+}
+
+h2 {
+	font-family: $main-font;
+	font-size: 50px;
+	color: $main-color;
+
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+h4 {
+	font-family: $main-font;
+	color: $secondary-color;
+	font-size: 22px;
+	font-weight: 600;
+	margin: 10px 0 0 0;
+}
+
+
+// MAINTENANCE/CLEANING/TOOLBOX GLOBAL STYLING
+
+.image-container {
+	width: 100%;
+	height: 100%;
+	padding: 30px 0;
+}
+
+.image-container svg {
+	width: 70%;
+}
+
+.gear-container {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.gear-container img {
+	height: 75px;
+}
+
+// GEAR ANIMATION
+
+
+	@-webkit-keyframes spinnerRotate
+	{
+	    from{-webkit-transform:rotate(0deg);}
+	    to{-webkit-transform:rotate(360deg);}
+	}
+	@-moz-keyframes spinnerRotate
+	{
+	    from{-moz-transform:rotate(0deg);}
+	    to{-moz-transform:rotate(360deg);}
+	}
+	@-ms-keyframes spinnerRotate
+	{
+	    from{-ms-transform:rotate(0deg);}
+	    to{-ms-transform:rotate(360deg);}
+	}
+
+	.spin:hover {
+	    -webkit-animation-name: spinnerRotate;
+	    -webkit-animation-duration: 5s;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-timing-function: linear;
+	    -moz-animation-name: spinnerRotate;
+	    -moz-animation-duration: 5s;
+	    -moz-animation-iteration-count: infinite;
+	    -moz-animation-timing-function: linear;
+	    -ms-animation-name: spinnerRotate;
+	    -ms-animation-duration: 5s;
+	    -ms-animation-iteration-count: infinite;
+	    -ms-animation-timing-function: linear;
+	}
+
+	.spin:active {
+		-webkit-animation-name: spinnerRotate;
+	    -webkit-animation-duration: 2s;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-timing-function: linear;
+	    -moz-animation-name: spinnerRotate;
+	    -moz-animation-duration: 2s;
+	    -moz-animation-iteration-count: infinite;
+	    -moz-animation-timing-function: linear;
+	    -ms-animation-name: spinnerRotate;
+	    -ms-animation-duration: 2s;
+	    -ms-animation-iteration-count: infinite;
+	    -ms-animation-timing-function: linear;
+	}
+
+
+// DESCRIPTION CONTAINER
+
+.description-container {
+	position: absolute;
+	width: 75%;
+	height: 75%;
+	bottom:0;
+	top:10%;
+	left:0;
+	right:0;
+	margin:auto;
+	background-color: rgba(44,62,80,.9);
+	border-radius: 20px;
+	display: none;
+	overflow: scroll;
+}
+
+.description-container .escape {
+		position: absolute;
+		width: 40px;
+		cursor: pointer;
+		top:20px;
+		right:20px;
+	}
+
+.description-contents {
+	height: 100%;
+	width: 100%;
+	padding: 5% 0 0 0;
+}
+
+.description-contents h3 {
+	font-family: $main-font;
+	font-size: 50px;
+	color: $main-color;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 3% 0;
+	@media all and (max-height: 670px) {
+		font-size:30px;
+	}
+
+	@media all and (max-width: 480px) {
+		font-size: 30px;
+	}
+}
+
+.description-contents p {
+	font-family: $main-font;
+	color: $main-color;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 175%;
+	padding: 0 10%;
+	text-align: left;
+
+	@media all and (max-width: 768px) {
+		font-size: 18px;
+	}
+
+	@media all and (max-width: 480px) {
+		font-size: 16px;
+	}
+}
+
+svg circle {
+	cursor:pointer;
+}
+
+
+

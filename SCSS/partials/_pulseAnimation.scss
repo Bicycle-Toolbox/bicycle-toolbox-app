@@ -1,0 +1,40 @@
+
+// PULSE ANIMATION -----------------------
+
+
+
+// STYLING 
+svg .pulse {
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(46,204,113,0.6);
+  animation: pulse 1.5s infinite;
+}
+
+// ANIMATION 
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(46,204,113, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(46,204,113, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(46,204,113, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(46,204,113, 0.6);
+    box-shadow: 0 0 0 0 rgba(46,204,113, 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(46,204,113, 0);
+      box-shadow: 0 0 0 20px rgba(46,204,113, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(46,204,113, 0);
+      box-shadow: 0 0 0 0 rgba(46,204,113, 0);
+  }
+}
